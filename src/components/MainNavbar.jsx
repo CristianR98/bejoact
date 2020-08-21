@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, Nav, Form, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import CartIcon from './CartIcon';
 import style from 'bootstrap/dist/css/bootstrap.css';
 
 class MainNavbar extends React.Component {
@@ -11,9 +12,7 @@ class MainNavbar extends React.Component {
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
                 </Nav>
-                <Form inline>
-                    <Button variant="outline-info">Carrito</Button>
-                </Form>
+                <CartIcon/>
             </Navbar>
         )
     }
