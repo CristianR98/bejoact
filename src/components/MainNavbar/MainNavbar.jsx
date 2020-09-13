@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import CartIcon from './CartIcon';
+import CartIcon from '../CartIcon/CartIcon';
 import style from 'bootstrap/dist/css/bootstrap.css';
 
 class MainNavbar extends React.Component {
