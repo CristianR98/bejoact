@@ -1,0 +1,9 @@
+.card .btn {
+    min-width: 2.4rem;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
