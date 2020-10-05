@@ -4,6 +4,17 @@
 
 .product-actions {
     display: flex;
+    flex-direction: column;
+
+}
+
+.item-count {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sale-button {
+    align-self: flex-end;
 }

@@ -22,7 +22,7 @@ class ProductCard extends React.Component {
 
     render() {
         return (
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: this.props.fullWidth ? '100%' : '18rem'  }}>
                 <Card.Img variant="top" src="https://picsum.photos/400/200" />
                 <Card.Body>
                     <Card.Title>{this.props.product.name}</Card.Title>
@@ -33,9 +33,12 @@ class ProductCard extends React.Component {
                     <p className="price">$ {this.props.product.price}</p>
                     <p className="stock">Stock: {this.props.product.stock}</p>
                     <div className="product-actions">
-                        <Button variant="primary" onClick={this.addProduct.bind(this)} >+</Button>
-                        <span className="item-count">{this.state.itemCount}</span>
-                        <Button variant="primary" onClick={this.substractProduct.bind(this)}>-</Button>
+                        <div className="item-count">
+                            <Button variant="primary" onClick={this.addProduct.bind(this)} >+</Button>
+                            <span className="item-count">{this.state.itemCount}</span>
+                            <Button variant="primary" onClick={this.substractProduct.bind(this)}>-</Button>
+                        </div>
+                        <Button variant="success" className="sale-button">Comprar</Button>
                     </div>
                 </Card.Body>
             </Card>
